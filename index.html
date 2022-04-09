@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="banner">
+
+  <main class="fylo-component">
+
+    <section class="fylo-menu">
+
+      <img class="logo" src="images/logo.svg" alt="Fylo-logo">
+
+      <div class="btn">
+
+        <img class="icon document" src="images/icon-document.svg" alt="icon-document">
+        <img class="icon folder" src="images/icon-folder.svg" alt="icon-folder">
+        <img class="icon upload" src="images/icon-upload.svg" alt="icon-upload">
+      </div>
+
+    </section>
+
+    <section class="range">
+      <p class="data"> You've used <strong id="value-a"> 815 GB </strong> of your storage. </p>
+
+      <section class="left-data">
+        <div class="box left-value"><strong id="value-b">185 </strong>GB LEFT</div>
+        <div class="bottom-tip"></div>
+      </section>
+          
+      <form class="field">
+        
+        <input type="range" min="0" max="1000" value="1000" steps="1" >
+
+        <div class="val">
+          <label class="left value">0 GB</label>
+          <label class="right value">1000 GB</label>
+        </div>
+        
+      </form>
+        
+    </section>
+
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Madan Sinha</a>.
+  </div>
+
+  <!-- Script -->
+  <script src="./script.js"></script>
+</body>
+</html>

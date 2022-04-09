@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root{
+    --gradient:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    --pale-blue:hsl(243, 100%, 93%);
+    --grayish-blue:hsl(229, 7%, 55%);
+    --dark-blue:hsl(228, 56%, 26%);
+    --v_dark-blue:hsl(229, 57%, 11%);
+
+    --font:"Raleway", sans-serif;
+}
+
+html,body{
+    font-size:14px;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center;
+    height:100vh;
+    color:white;
+
+}
+
+/* Background design*/
+
+#banner{
+    background-color:var(--v_dark-blue);
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+/* Fylo Card layout*/
+
+.fylo-component{
+    width:67.5em;
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 10.5em;
+    
+
+}
+
+/*Fylo Menu section*/
+
+.fylo-menu{
+    width:21.75em;
+    height:12.68em;
+    background-color: var(--dark-blue);
+    border-radius:10px 100px  10px 10px;
+}
+
+.fylo-menu .logo{
+    margin:3rem 0 2rem 3rem;
+}
+
+.fylo-menu .btn .icon{
+    margin-left:3rem;
+    background-color: var(--v_dark-blue);
+}
+
+/* Fylo Data Section*/
+
+.range{
+    margin-top:3.2rem;
+    width:34.5em;
+    height:9.5em;
+    background-color:var(--dark-blue);
+    border-radius:8px;
+}
+
+.range .data{
+    margin-left: 3rem;
+    margin-top: 3rem;
+    font-family: var(--font);
+}
+
+
+.range .left-data{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    margin-top:-8.5em;
+    margin-right: 3em;
+    margin-bottom: 2.5em;
+    color:var(--grayish-blue);
+    
+}
+
+.range .left-data .box{
+    width:182px;
+    background-color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    text-align:center;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    font-family: var(--font);
+    
+    
+}
+
+.range .left-data .bottom-tip{
+    width:0;
+    height: 0;
+    border-top:19px solid #fff;
+    border-left: 19px solid transparent;
+}
+.range .field{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.range .field input{
+    width:400px;
+    -webkit-appearance:none;
+    height:12px;
+    background:var(--v_dark-blue);
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+.range .field input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    background: 	#fff;
+    border-radius: 50%;
+    border: 1px solid #fe6d73;
+    cursor: pointer;
+    box-shadow: -307px 0 0 300px #FF8498;
+  }
+
+  .range .field input::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    background: 	#fff;
+    border-radius: 50%;
+    border: 1px solid #fe6d73;
+    cursor: pointer;
+    box-shadow: -307px 0 0 300px #FF8498;
+  }
+
+.val{
+    display:flex;
+    justify-content: space-between;
+    font-family: var(--font);
+    margin-top: .5rem;;
+}
+
+#value-a{
+    color:#fff;
+
+}
+
+#value-b{
+    color:black;
+    font-size:28px;
+}
+
+.attribution{
+    margin-top:1rem;
+    font-family: var(--font);
+    
+}
+
+.attribution a{
+    color:var(--pale-blue)
+}
+
+@media screen and (max-width: 780px){
+
+    #banner{
+        background: url(images/bg-mobile.png) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;   
+        
+    }
+    
+    .fylo-component{
+        font-size:14px;
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+        align-items:center;
+        height:100vh;
+        color:white;
+    }
+    
+    .fylo-menu{
+        margin-bottom: -2rem;
+    }
+    .range{
+        width:21.75em;
+        
+    }
+
+    .range .data{
+        margin-top: -1px;
+        padding-top: 2rem;
+    }
+
+    .range .left-data{
+        margin-top:4rem;        
+    }
+
+    .range .left-data .bottom-tip{
+        border:0;
+    }
+
+    .range .left-data .box{
+        width:150px;
+        background-color: #fff;
+        border-radius: 12px;  
+        display:block;
+        margin-left: auto;
+        margin-right: 2.5rem;      
+
+    }
+
+    .range .field input{
+        width:230px;    
+        margin-top: -10rem;
+    }
+
+    
+
+
+}
+
+
+
+
